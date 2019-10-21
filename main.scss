@@ -1,0 +1,193 @@
+$green: #3c9283;
+$firstFont: schnebel-sans-me, sans-serif;
+$secondFont: 'Roboto', sans-serif;
+
+.header {
+    font-family: $firstFont;
+    display: inline;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px; 
+        width: 150px;  
+        display: block;
+        border-top: 2px solid;
+    }
+}
+
+.paragraph {
+    font-family: $firstFont;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.greeting {
+    min-height: 100vh;
+    background-image: url(images/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        &__main {
+            background: white;
+            position: sticky;
+        }
+
+            &__main::after {
+                content: "";
+                position: absolute;  
+                bottom: 0;
+                left: 0;
+                right: 0;  
+                width: 100vw;  
+                display: block;
+                border-top: 1px solid #3c9283;
+            }
+
+        &__logo {
+            margin: 10px;
+        }   
+
+        &__text {
+            margin: 20px;
+        }
+
+            &__text::after {
+                content: "";
+                position: absolute;  
+                bottom: 0;
+                right: 0;  
+                width: 187px;
+                height: 201px;
+                display: block;
+                background-image: url(images/Marta.png);         
+            } 
+
+            &__text::before {
+                content: "";
+                position: absolute;  
+                bottom: 0;
+                left: 0;  
+                width: 186px;
+                height: 129px;
+                display: block;
+                background-image: url(images/logoBig.png);         
+            }   
+}
+
+.introduction {
+    min-height: 100vh;
+
+    &__text {
+        margin: 20px;
+    }
+
+    &__paragraph {
+        font-size: 0.9rem;
+    }
+
+    &__readMore {
+        position: absolute;
+        right: 20px;
+        font-family: $firstFont;
+        font-size: 0.9rem;
+    } 
+}
+
+.fields {
+    &__text {
+        margin: 20px;
+    }
+    &__content {
+        padding: 0;
+    }
+    &__box {
+        list-style: none;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+    &__name {
+        font-family: $secondFont;
+        line-height: 29.2px;
+        letter-spacing: 4.75px; 
+        position: relative;
+    }
+        &__name::after {
+            content: "";
+            position: absolute;  
+            bottom: -15px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 100px;  
+            display: block;
+            border-top: 1px solid #3c9283;
+        }
+}
+
+.strengths{
+    &__text {
+        margin: 20px;
+    }
+    &__content {
+        padding: 0;
+    }
+    &__box {
+        list-style: none;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+    &__name {
+        font-family: $secondFont;
+        line-height: 29.2px;
+        letter-spacing: 4.75px; 
+        position: relative;
+    }
+        &__name::after {
+            content: "";
+            position: absolute;  
+            bottom: -15px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 100px;  
+            display: block;
+            border-top: 1px solid #3c9283;
+        }
+    &__paragraph {
+        font-family: $secondFont;
+        margin-top: 40px;
+        letter-spacing: 0.34px;
+    }    
+}
+
+.contact {
+    &__content {
+        margin-top: 40px;
+    }
+    &__header {
+        margin: 20px;
+    }
+    &__box {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    &__data {
+        font-family: $firstFont;
+    }
+    &__map {
+        width: 100vw;
+    }
+}
+
+.footer {
+    text-align: center;
+}
