@@ -81,6 +81,19 @@ $secondFont: 'Roboto', sans-serif;
 .introduction {
     min-height: 100vh;
 
+    &::after {
+        content: "";
+        position: absolute;  
+        left: 0; 
+        right: 0; 
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(images/courts.png);
+        width: 230px;
+        height: 198px;
+    }
+
     &__text {
         margin: 20px;
     }
@@ -97,9 +110,24 @@ $secondFont: 'Roboto', sans-serif;
     } 
 }
 
-.fields {
+.fields { 
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;  
+        bottom: 0;
+        top: 0;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(images/fieldsBackground.png);
+        width: 100%; 
+        min-height: 100vh;
+        z-index: -1;
+    }
     &__text {
         margin: 20px;
+        color: #f7f7f7;
     }
     &__content {
         padding: 0;
@@ -169,25 +197,52 @@ $secondFont: 'Roboto', sans-serif;
 }
 
 .contact {
-    &__content {
-        margin-top: 40px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;  
+        bottom: 0;
+        top: 0;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(images/contactBackground.png);
+        width: 100%; 
+        min-height: 100vh;
+        z-index: -1;
     }
-    &__header {
-        margin: 20px;
-    }
-    &__box {
-        text-align: center;
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
-    &__data {
-        font-family: $firstFont;
-    }
-    &__map {
-        width: 100vw;
-    }
+        &__content {
+            margin-top: 40px;
+        }
+        &__header {
+            margin-left: 20px;
+            color: #f7f7f7;
+        }
+        &__box {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        &__data {
+            font-family: $firstFont;
+            color: #b3b3b3;
+            letter-spacing: 0.8px;
+        }
+        &__map {
+            width: 100vw;
+        }
 }
 
 .footer {
     text-align: center;
+    background-color: #050505;
+    display: flex;
+    justify-content: space-between;
+        &__content {
+            width: 100vw;
+        }
+        &__text {
+            color: #7d7d7d;
+            font-family: $secondFont;
+        }
 }
