@@ -26,10 +26,9 @@ $secondFont: 'Roboto', sans-serif;
 }
 
 .navbar {
-    & {
-        background: white;
-        position: sticky;
-    }
+    
+    background: white;
+    position: sticky;   
     
         &::after {
             content: "";
