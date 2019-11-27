@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px) and (max-width: 1119px) { 
+    * {
+        font-size: 1.1em;
+    }
+    .navbar {
+        display: none;
+    }
+    .greeting {
+        padding-top: 0;
+        height: 100vh;
+    }
+    .greeting__text {
+        padding: 200px 100px;
+    }
+    .introduction__text {
+        padding: 100px;
+    }
+    .header::after {
+        width: 280px;
+    }
+    .greeting__name {
+        letter-spacing: 30px;
+    }
+    .greeting__surname {
+        letter-spacing: 18px;
+    }
+    .paragraph {
+        line-height: 40px;
+        letter-spacing: 0.5px;
+    }    
+    .fields__header,
+    .strengths__header {
+        padding-left: 100px;
+        padding-top: 40px;
+    }
+    .fields__header::after,
+    .strengths__header::after {
+        left: 100px;
+    }
+
+    .fields__content,
+    .strengths__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fields__box,
+    .strengths__box {
+        width: 40%;
+        font-size: 0.7em;
+        padding-bottom: 60px;
+    }
+    .strengths__box {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .contact__content {
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact__header{
+        padding-left: 100px;
+    }
+    .contact__header::after {
+        left: 100px;
+    }
+    .contact__box {
+        display: flex;   
+    }
+    .contact__icon {
+        align-self: center;
+        margin-left: 0;
+        margin-right: 0; 
+    }
+    .contact__envelope {
+        margin-right: 49px;
+    }
+    .contact__point {
+        margin-right: 70px;
+    }
+    .contact__phone {
+        margin-right: 62px;
+    }
+    .contact__data {
+        text-align: left
+    }
+    .contact__link {
+        width: 100vw;
+    }
+}
