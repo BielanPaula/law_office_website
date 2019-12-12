@@ -60,10 +60,20 @@
 
     /* INTRODUCTION */
     .introduction__text {
-        width: 900px;
-        height: 317px;
         font-size: 1.5em;
         padding-left: 300px;
+    }
+
+    .introduction__paragraph {
+        padding-top: 65px;
+        padding-left: 550px;
+        padding-right: 40px;
+    }
+
+    .introduction::before {
+        background-size: 40%;
+        opacity: 90%;
+        background-position: left 200px bottom 200px;
     }
 
     /* FIELDS, STRENGTHS */
