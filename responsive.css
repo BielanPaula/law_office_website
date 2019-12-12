@@ -30,7 +30,7 @@
         display: block;
         position: absolute;
         top: 50%; 
-        bottom: 50%; 
+        bottom: 50%;
         margin-top: auto; 
         margin-bottom: auto;
         padding-left: 60px;
@@ -198,8 +198,18 @@
     } 
 
     /* NAVBAR */
-    .navbar {
-        display: none;
+    .navbar__logo {
+        width: 76px;
+        height: auto;
+    }
+    
+    .navbar__phonePopup {
+        width: 234px;
+        height: auto;
+    }
+
+    .navbar__phone {
+        padding-right: 25px;
     }
 
     /* GREETING */
@@ -209,7 +219,7 @@
     }
 
     .greeting__text {
-        padding: 200px 100px;
+        padding: 130px 100px;
     }
 
     .greeting__name {
@@ -221,8 +231,20 @@
     }
 
     /* INTRODUCTION */
+    .introduction {
+        height: 1700px;
+    }
+
     .introduction__text {
-        padding: 100px;
+        padding: 50px 100px;
+    }
+
+    .introduction__paragraph {
+        padding-top: 700px;
+    }
+
+    .introduction::before {
+        background-position: center top 190px;
     }
 
     .header::after {
@@ -275,6 +297,10 @@
 
     .contact__header::after {
         left: 100px;
+    }
+
+    .contact__container {
+        padding-top: 40px;
     }
 
     .contact__box {
