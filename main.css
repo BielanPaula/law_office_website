@@ -68,6 +68,7 @@
   padding-right: 6px;
   color: white;
   font-family: schnebel-sans-me, sans-serif;
+  text-decoration: none;
 }
 
 .greeting {
@@ -116,7 +117,7 @@
 
 .introduction {
   min-height: 100vh;
-  height: 1000px;
+  height: 950px;
   position: relative;
   background-image: url(images/aboutMeBackground.jpg);
   background-repeat: no-repeat;
@@ -124,7 +125,7 @@
   z-index: -100;
 }
 
-.introduction::after {
+.introduction::before {
   content: "";
   position: absolute;
   background-image: url(images/Marta.png);
@@ -132,11 +133,12 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center bottom 0;
+  background-size: 60%;
+  opacity: 90%;
+  background-position: center top 105px;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: 0;
 }
 
 .introduction__text {
@@ -149,6 +151,8 @@
 
 .introduction__paragraph {
   margin: 0;
+  padding-top: 330px;
+  float: right;
 }
 
 .introduction__readMore {
@@ -309,6 +313,7 @@
 .contact__content {
   margin: 0;
   padding-left: 0;
+  padding-bottom: 60px;
 }
 
 .contact__header {
@@ -342,7 +347,7 @@
   font-weight: 600;
 }
 
-.contact a {
+.contact__link {
   background-color: transparent;
   display: block;
   height: 100vh;
@@ -350,6 +355,12 @@
   background-image: url(images/mapapin.png);
   background-size: cover;
   background-position: center center;
+  text-decoration: none;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #b3b3b3;
 }
 
 .footer {
