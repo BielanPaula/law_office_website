@@ -1,38 +1,241 @@
+@media screen and (min-width: 1120px)  {
+    /* NAVBAR */
+    .navbar {
+        background: transparent;
+    }
+
+    .navbar::after {
+        display: none;
+    }
+    
+    .navbar__logo {
+        display: none;
+    }
+
+    .navbar__phonePopup {
+        margin: 0;
+        width: 407px;
+        height: 105px;
+        padding-top: 20px;
+    }
+
+    .navbar__phone {
+        padding-top: 118px;
+        font-size: 2em;
+        padding-right: 60px;
+    }
+
+    /* NAVIGATION */
+    .navigation {
+        display: block;
+        position: absolute;
+        top: 50%; 
+        bottom: 50%; 
+        margin-top: auto; 
+        margin-bottom: auto;
+        padding-left: 60px;
+    }
+
+    /* GREETING */
+    .greeting {
+        min-height: 100vh;
+        padding-top: 0;
+    }
+    
+    .greeting::before{
+        opacity: 50%;
+    }
+
+    .greeting__text {
+        width: 676px;
+        height: 317px;
+        font-size: 1.5em;
+        padding-left: 250px;
+    }
+
+    .greeting::before {
+        background-size: 55%;
+        background-position: right bottom 0;
+    }
+
+    /* INTRODUCTION */
+    .introduction__text {
+        width: 900px;
+        height: 317px;
+        font-size: 1.5em;
+        padding-left: 300px;
+    }
+
+    /* FIELDS, STRENGTHS */
+    .fields,
+    .strengths {
+        height: 100vh;
+    }
+
+    .strengths {
+        position: relative;
+    }
+
+    .fields__header,
+    .strengths__header {
+        padding-left: 300px;
+        padding-top: 40px;
+    }
+
+    .fields__header::after,
+    .strengths__header::after {
+        left: 300px;
+    }
+
+    .fields__content,
+    .strengths__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 300px;
+        padding-bottom: 0;
+        min-height: calc(100vh - 81px);
+        align-content: center;
+    }
+
+    .fields__box,
+    .strengths__box {
+        width: 25%;
+        font-size: 0.7em;
+        padding-bottom: 60px;
+        padding: 0;
+    }
+
+    .fields__box {
+        height: 30%;
+    }
+
+     /* CONTACT */
+    .contact {
+        height: 100vh;
+    }
+
+    .contact {
+        width: 100vw;
+    }
+
+    .contact__content {
+        top: 50%; 
+        bottom: 50%; 
+        margin-top: auto; 
+        margin-bottom: auto;
+        
+    }
+
+    .contact__text {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        padding-left: 300px;
+    }
+
+    .contact__map {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .contact__box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact__icon {
+        top: 50%; 
+        bottom: 50%; 
+        margin-top: auto; 
+        margin-bottom: auto;
+        padding-right: 50px;
+    }
+
+    .contact__envelope {
+        width: 47px;
+        height: 39px;
+        padding-right: 49px;
+    }
+
+    .contact__point {
+        width: 28px;
+        height: 42px;
+        padding-right: 70px;
+    }
+
+    .contact__phone {
+        width: 38px;
+        height: 37px;
+        padding-right: 62px;
+    }
+
+    .contact__data {
+        text-align: left;
+    }
+
+    /* FOOTER */
+    .footer__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+
 @media screen and (min-width: 768px) and (max-width: 1119px) { 
     * {
         font-size: 1.1em;
     }
+    
+    .paragraph {
+        line-height: 40px;
+        letter-spacing: 0.5px;
+    } 
+
+    /* NAVBAR */
     .navbar {
         display: none;
     }
+
+    /* GREETING */
     .greeting {
         padding-top: 0;
         height: 100vh;
     }
+
     .greeting__text {
         padding: 200px 100px;
     }
-    .introduction__text {
-        padding: 100px;
-    }
-    .header::after {
-        width: 280px;
-    }
+
     .greeting__name {
         letter-spacing: 30px;
     }
+
     .greeting__surname {
         letter-spacing: 18px;
     }
-    .paragraph {
-        line-height: 40px;
-        letter-spacing: 0.5px;
-    }    
+
+    /* INTRODUCTION */
+    .introduction__text {
+        padding: 100px;
+    }
+
+    .header::after {
+        width: 280px;
+    }
+    
+    /* FIELDS, STRENGTHS   */
     .fields__header,
     .strengths__header {
         padding-left: 100px;
         padding-top: 40px;
     }
+
     .fields__header::after,
     .strengths__header::after {
         left: 100px;
@@ -44,49 +247,62 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .fields__box,
     .strengths__box {
         width: 40%;
         font-size: 0.7em;
         padding-bottom: 60px;
     }
+
     .strengths__box {
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
     }
+
+    /* CONTACT */
     .contact__content {
         padding-left: 100px;
         padding-right: 100px;
         width: 100%;
         box-sizing: border-box;
     }
+
     .contact__header{
         padding-left: 100px;
     }
+
     .contact__header::after {
         left: 100px;
     }
+
     .contact__box {
         display: flex;   
     }
+
     .contact__icon {
         align-self: center;
         margin-left: 0;
         margin-right: 0; 
     }
+
     .contact__envelope {
         margin-right: 49px;
     }
+
     .contact__point {
         margin-right: 70px;
     }
+
     .contact__phone {
         margin-right: 62px;
     }
+
     .contact__data {
         text-align: left
     }
+    
     .contact__link {
         width: 100vw;
     }
