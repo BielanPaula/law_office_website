@@ -1,5 +1,21 @@
 .navigation {
   display: none;
+  animation-name: navigation-animation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes navigation-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 .header {
@@ -51,24 +67,13 @@
   position: absolute;
   width: 134px;
   height: 39px;
-  right: 0;
+  right: -295px;
   top: 50%;
   bottom: 50%;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.navbar__phone {
-  position: absolute;
-  right: 0;
-  top: 34%;
-  bottom: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-right: 6px;
-  color: white;
-  font-family: schnebel-sans-me, sans-serif;
-  text-decoration: none;
+  background-image: url(images/phonenum.png);
+  background-size: 100%;
 }
 
 .greeting {
@@ -94,6 +99,27 @@
   left: 0;
   right: 0;
   bottom: 0;
+  color: #3079ed;
+  animation-name: logo-animation;
+  animation-delay: 60s;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes logo-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .greeting__text {
@@ -128,7 +154,7 @@
 .introduction::before {
   content: "";
   position: absolute;
-  background-image: url(images/Marta.png);
+  background-image: url(images/MartaB.png);
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -153,6 +179,7 @@
   margin: 0;
   padding-top: 330px;
   float: right;
+  font-size: 1em;
 }
 
 .introduction__readMore {
@@ -225,6 +252,25 @@
 
 .fields__icon {
   max-width: 180px;
+  animation-name: angry-animation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes angry-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .fields__criminal::after {
@@ -285,6 +331,28 @@
   padding: 1.5em;
   letter-spacing: 0.04em;
   line-height: 1.5em;
+}
+
+.strengths__icon {
+  animation-name: angry-animation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes angry-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .strengths__hand {

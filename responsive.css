@@ -17,13 +17,12 @@
         width: 407px;
         height: 105px;
         padding-top: 20px;
+        transition: right 1s;
     }
-
-    .navbar__phone {
-        padding-top: 118px;
-        font-size: 2em;
-        padding-right: 60px;
+    .navbar__phonePopup:hover {
+        right: 0px;
     }
+    
 
     /* NAVIGATION */
     .navigation {
@@ -40,6 +39,7 @@
     .greeting {
         min-height: 100vh;
         padding-top: 0;
+        background-image: url(images/mountainsMonitor.png);
     }
     
     .greeting::before{
@@ -47,33 +47,120 @@
     }
 
     .greeting__text {
-        width: 676px;
-        height: 317px;
-        font-size: 1.5em;
-        padding-left: 250px;
+        width: 40%;
+        font-size: 1.1em;
+        padding-left: 300px;
+        padding-top: 200px;
+    }
+
+    .greeting__text::after {
+        content: "";
+        position: absolute;
+        background-image: url(images/scroll.png);
+        z-index: 10000;
+        width: 25px;
+        height: 39px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 100%;
+        background-position: center bottom;
+        left: 49.2%;
+        right: 50%;
+        bottom: 3px;
+        animation-name: scroll-animation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scroll-animation {
+        0%   { bottom: 5px;}
+        100%  { bottom: 1px;}
+      }
+
+    .greeting__text::before {
+        content: "";
+        position: absolute;
+        background-image: url(images/logotop.png);
+        left: 300px;
+        top: 30px;
+        width: 97px;
+        height: 69px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        animation-name: logo-animation;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+    }  
+
+    .greeting__header {
+        font-size: 2.2em;
+    }
+
+    .greeting__paragraph {
+        padding-top: 40px;
     }
 
     .greeting::before {
-        background-size: 55%;
-        background-position: right bottom 0;
+        background-size: 35%;
+        opacity: 100;
     }
+
+    .greeting::after {
+        content: "";
+        position: absolute;
+        background-image: url(images/MartaBi.png);
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        opacity: 100%;
+        background-position: right 40px bottom;
+        left: 0;
+        right: 0;
+        top: 0;
+        animation-name: logo-animation;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+    }
+        
+        @keyframes logo-animation {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 100;
+            }
+        }
 
     /* INTRODUCTION */
     .introduction__text {
+        padding-top: 70px;
         font-size: 1.5em;
-        padding-left: 300px;
+        padding-left: 400px;
     }
 
     .introduction__paragraph {
-        padding-top: 65px;
-        padding-left: 550px;
-        padding-right: 40px;
+        padding-top: 85px;
+        /* padding-left: 550px; */
+        padding-right: 890px;
+        width: 40%;        
+        font-size: 0.9em;
     }
 
     .introduction::before {
-        background-size: 40%;
+        display: none;
+        /* background-size: 40%;
         opacity: 90%;
-        background-position: left 200px bottom 200px;
+        background-position: right 50px bottom; */
     }
 
     /* FIELDS, STRENGTHS */
