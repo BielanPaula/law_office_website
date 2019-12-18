@@ -145,7 +145,7 @@ $secondFont: 'Roboto', sans-serif;
     min-height: 100vh;
     height: 950px;
     position: relative;
-    background-image: url(images/aboutMeBackground.jpg);
+    background-image: url(images/aboutMeBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -100;
@@ -175,7 +175,6 @@ $secondFont: 'Roboto', sans-serif;
     &__paragraph {
         margin: 0;        
         padding-top: 330px;
-        float: right;
         font-size: 1em;
     }
     &__readMore {
@@ -261,9 +260,9 @@ $secondFont: 'Roboto', sans-serif;
             }
           }
     }    
-    &__criminal::after {
-        display: none;
-    }
+    // &__criminal::after {
+    //     display: none;
+    // }
 }
 
 .strengths{

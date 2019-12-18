@@ -145,7 +145,7 @@
   min-height: 100vh;
   height: 950px;
   position: relative;
-  background-image: url(images/aboutMeBackground.jpg);
+  background-image: url(images/aboutMeBackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -100;
@@ -178,7 +178,6 @@
 .introduction__paragraph {
   margin: 0;
   padding-top: 330px;
-  float: right;
   font-size: 1em;
 }
 
@@ -271,10 +270,6 @@
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-}
-
-.fields__criminal::after {
-  display: none;
 }
 
 .strengths {
