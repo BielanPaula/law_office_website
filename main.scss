@@ -68,7 +68,7 @@ $secondFont: 'Roboto', sans-serif;
         position: absolute;
         width: 134px;
         height: 39px;
-        right: -295px;
+        right: -93px;
         top: 50%; 
         bottom: 50%; 
         margin-top: auto; 
@@ -76,7 +76,11 @@ $secondFont: 'Roboto', sans-serif;
         background-image: url(images/phonenum.png);
         background-size: 100%;
     }
+    
+    &__phonePopup:hover {
+        right: 0px;
     }
+}
 
 .greeting {
     position: relative;
@@ -101,7 +105,6 @@ $secondFont: 'Roboto', sans-serif;
         left: 0;
         right: 0;
         bottom: 0;  
-        color: #3079ed;
         animation-name: logo-animation;
         animation-delay: 60s;
         animation-duration: 3s;

@@ -67,13 +67,17 @@
   position: absolute;
   width: 134px;
   height: 39px;
-  right: -295px;
+  right: -93px;
   top: 50%;
   bottom: 50%;
   margin-top: auto;
   margin-bottom: auto;
   background-image: url(images/phonenum.png);
   background-size: 100%;
+}
+
+.navbar__phonePopup:hover {
+  right: 0px;
 }
 
 .greeting {
@@ -99,7 +103,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  color: #3079ed;
   animation-name: logo-animation;
   animation-delay: 60s;
   animation-duration: 3s;

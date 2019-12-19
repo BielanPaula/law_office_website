@@ -359,7 +359,11 @@
     
     .navbar__phonePopup {
         width: 234px;
-        height: auto;
+        height: 139px;
+        right: -165px;
+        background-repeat: no-repeat;
+        top: 90%; 
+        bottom: 0%; 
     }
 
     .navbar__phone {
@@ -486,3 +490,4 @@
     .contact__link {
         width: 100vw;
     }
+}
