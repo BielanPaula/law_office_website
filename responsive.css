@@ -177,7 +177,23 @@
         right: 0;
         top: 0;
         bottom: 0;
+        animation-name: logo-animation;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-iteration-count: 1;
     }
+        
+        @keyframes logo-animation {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 100;
+            }
+        }
 
     /* FIELDS, STRENGTHS */
     .fields,
@@ -230,7 +246,9 @@
     }
 
     .strengths__paragraph {
-        font-size: 1.1em;
+        font-size: 1.2em;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
      /* CONTACT */
@@ -239,7 +257,7 @@
     }
 
     .contact {
-        width: 100vw;
+        width: 100%;
     }
 
     .contact__header {
@@ -307,6 +325,13 @@
         text-align: left;
     }
 
+    .contact__content {
+        font-size: 1.3em;
+    }
+
+    .contact__link {
+        width: 70%;
+    }    
     /* FOOTER */
     .footer__content {
         display: flex;
@@ -461,4 +486,3 @@
     .contact__link {
         width: 100vw;
     }
-}
