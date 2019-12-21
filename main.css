@@ -31,6 +31,9 @@
   left: 0;
   width: 150px;
   border-top: 2px solid;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .paragraph {
@@ -38,6 +41,12 @@
   text-align: justify;
   padding-top: 25px;
   line-height: 1.5em;
+}
+
+.navbar {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -74,6 +83,7 @@
   margin-bottom: auto;
   background-image: url(images/phonenum.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .navbar__phonePopup:hover {
@@ -99,10 +109,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: 70%;
-  background-position: center bottom 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-position: center bottom;
   animation-name: logo-animation;
   animation-delay: 60s;
   animation-duration: 3s;
@@ -430,19 +437,17 @@
 }
 
 .footer {
-  text-align: center;
   background-color: #050505;
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer__content {
   width: 100%;
+  padding: 10px 0;
+  position: relative;
 }
 
 .footer__text {
   color: #7d7d7d;
   font-family: "Roboto", sans-serif;
   margin: 0;
-  padding: 10px 0;
 }

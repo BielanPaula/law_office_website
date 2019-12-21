@@ -47,10 +47,13 @@
     }
 
     .greeting__text {
-        width: 40%;
+        width: 1000px;
         font-size: 1.1em;
-        padding-left: 300px;
-        padding-top: 200px;
+        margin: 0 auto;
+        /* padding-left: 300px;*/
+        padding-top: 200px; 
+        position: relative;
+        height: 100vh;
     }
 
     .greeting__text::after {
@@ -64,9 +67,10 @@
         background-size: 100%;
         opacity: 100%;
         background-position: center bottom;
-        left: 49.2%;
         right: 50%;
+        left: 50%;
         bottom: 3px;
+        margin-right: 0;
         animation-name: scroll-animation;
         animation-duration: 1s;
         animation-iteration-count: infinite;
@@ -77,12 +81,11 @@
         100%  { bottom: 1px;}
       }
 
-    .greeting__text::before {
+    .greeting__header::before {
         content: "";
         position: absolute;
         background-image: url(images/logotop.png);
-        left: 300px;
-        top: 30px;
+        bottom: 3em;
         width: 97px;
         height: 69px;
         background-size: 100%;
@@ -144,39 +147,47 @@
     /* INTRODUCTION */
     .introduction__text {
         padding-top: 85px;
-        padding-left: 300px;
+        /* padding-left: 300px; */
+        width: 1000px;
+        margin: 0 auto;
     }
 
     .introduction__header {
         font-size: 2.2em;
+        width: 50%;  
     }
 
     .introduction__paragraph {
         padding-top: 85px;
-        padding-right: 890px;
-        width: 40%;        
+        width: 50%;        
         font-size: 1.1em;
+        float: left;
     }
 
     .introduction::before {
         display: none;
     }
 
+    .introduction__image {
+        width: 50%;
+        float: right;
+        padding-left: 40px;
+        padding-top: 90px;
+        box-sizing: border-box;
+    }
+
     .introduction::after {
         content: "";
         position: absolute;
-        background-image: url(images/IMG.png);
-        z-index: 100;
-        width: 100%;
-        height: 100%;
+        background-image: url(images/court.jpg);
+        width: 539px;
+        height: 410px;
         background-repeat: no-repeat;
-        background-size: 50%;
-        opacity: 100%;
-        background-position: right 40px bottom 80%;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+        /* background-size: 50%;
+        opacity: 100%; */
+        /* background-position: right 0 bottom 0; */
+        right: 50px;
+        bottom: 250px;
         animation-name: logo-animation;
         animation-duration: 3s;
         animation-timing-function: ease;
@@ -201,28 +212,34 @@
         height: 100vh;
     }
 
+    .fields__container,
+    .strengths__container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
     .strengths {
         position: relative;
     }
 
     .fields__header,
     .strengths__header {
-        padding-left: 300px;
+        /* padding-left: 300px; */
         padding-top: 85px;
         font-size: 2.2em;
     }
 
     .fields__header::after,
     .strengths__header::after {
-        left: 300px;
+        /* left: 300px; */
     }
 
     .fields__content,
     .strengths__content {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 350px;
-        padding-right: 50px;
+        /* padding-left: 350px; */
+        /* padding-right: 50px; */
         padding-bottom: 0;
         min-height: calc(100vh - 250px);
         align-content: center;
@@ -263,6 +280,11 @@
     .contact__header {
         font-size: 2.2em;
         padding-top: 85px;
+        padding-left: 0;
+    }
+
+    .contact__header::after {
+        left: 0;
     }
 
     .contact__content {
@@ -270,23 +292,23 @@
         bottom: 50%; 
         margin-top: auto; 
         margin-bottom: auto;
-        
     }
 
     .contact__text {
         display: flex;
         flex-direction: row;
+        width: 1000px;
+        margin: 0 auto;
     }
 
     .contact__container {
         display: flex;
         flex-direction: column;
-        width: 50vw;
-        padding-left: 300px;
+        width: 50%;
     }
 
     .contact__map {
-        width: 50vw;
+        width: 50%;
         height: 100vh;
     }
 
@@ -304,19 +326,19 @@
     }
 
     .contact__envelope {
-        width: 47px;
-        height: 39px;
-        padding-right: 49px;
+        /* width: 47px; */
+        height: 45px;
+        padding-right: 58px;
     }
 
     .contact__point {
-        width: 28px;
+        /* width: 28px; */
         height: 42px;
         padding-right: 70px;
     }
 
     .contact__phone {
-        width: 38px;
+        /* width: 38px; */
         height: 37px;
         padding-right: 62px;
     }
@@ -337,6 +359,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        width: 1000px;
+        margin: 0 auto;
     }
     
 }

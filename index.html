@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="navbar">
+    <!-- <div class="navbar">
         <img class="navbar__logo" src="images/logo.png" alt="logo">
         <a href="tel:+48509897077" class="navbar__phonePopup"></a>
-    </div>
+    </div> -->
     <section class="greeting">
             <img class="greeting__nav navigation" src="images/nav1.png" alt="navigation">
         <article class="greeting__text">
@@ -29,11 +30,13 @@
         <article class="introduction__text">
             <h1 class="introduction__header header">O MNIE</h1>
             <p class="introduction__paragraph paragraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nazywam się Marta Bielan, jestem adwokatem i członkiem Okręgowej Rady Adwokackiej w Poznaniu. Ukończyłam studia prawnicze na Uniwersytecie Adama Mickiewicza w Poznaniu, podczas których zdobywałam doświadczenie w poznańskich kancelariach adwokackich i radcowskich, a także angażowałam się w pracę przy ciekawych projektach organizacji pozarządowych. Po rozpoczęciu aplikacji adwokackiej pod patronatem adwokata Zbigniewa Kasei, moja aktywność życiowa i zawodowa przeniosła się do rodzinnego Kalisza, w którym to mieście obecnie, z powodzeniem, prowadzę własną kancelarię adwokacką. Moja Kancelaria Adwokacka ukierunkowana jest na kompleksowe świadczenie usług z różnych dziedzin prawa adresowanych zarówno do przedsiębiorców jak i osób fizycznych.</p>
+            <img class="introduction__image" src="images/courtroom.jpg" alt="point">
         </article>
     </section>
     <section class="fields">
             <img class="fields__nav navigation" src="images/fieldsNav.png" alt="navigation">
-            <h1 class="fields__header header">DZIEDZINY PRAWA</h1>
+            <div class="fields__container">
+                <h1 class="fields__header header">DZIEDZINY PRAWA</h1>
                 <ul class="fields__content">
                     <li class="fields__box">
                         <img class="fields__icon" src="images/civil.png" alt="gavel">
@@ -51,11 +54,14 @@
                         <img class="fields__icon" src="images/criminal.png" alt="handcuffs">
                         <p class="fields__name fields__criminal">PRAWO</br>KARNE</p>
                     </li>    
-                </ul>      
+                </ul>  
+            </div>
+               
     </section>
     <section class="strengths">   
             <img class="strengths__nav navigation" src="images/strengthsNav.png" alt="navigation">
-            <h1 class="strengths__header header">MOCNE STRONY</h1>
+            <div class="strengths__container">
+                <h1 class="strengths__header header">MOCNE STRONY</h1>
                 <ul class="strengths__content">
                     <li class="strengths__box">
                         <img class="strengths__icon strengths__hand" src="images/involvment.png" alt="hands">
@@ -78,6 +84,7 @@
                         <p class="strengths__paragraph arrow__paragraph">Przydatne gdy konsyliacja, szybkość lub pozasądowe rozwiązanie sporu leży w interesie klienta.</p>
                     </li>
                 </ul>
+            </div>            
     </section>
     <section class="contact">
             <img class="contact__nav navigation" src="images/contactNav.png" alt="navigation">
