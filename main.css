@@ -1,21 +1,5 @@
 .navigation {
   display: none;
-  animation-name: navigation-animation;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-}
-
-@keyframes navigation-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
 }
 
 .header {
@@ -110,26 +94,6 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center bottom;
-  animation-name: logo-animation;
-  animation-delay: 60s;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-}
-
-@keyframes logo-animation {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 .greeting__text {
@@ -177,7 +141,6 @@
 
 .introduction__text {
   padding: 20px;
-  height: 100vh;
 }
 
 .introduction__header {
@@ -264,25 +227,6 @@
 
 .fields__icon {
   max-width: 180px;
-  animation-name: angry-animation;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-}
-
-@keyframes angry-animation {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 .strengths {
@@ -339,28 +283,6 @@
   padding: 1.5em;
   letter-spacing: 0.04em;
   line-height: 1.5em;
-}
-
-.strengths__icon {
-  animation-name: angry-animation;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-}
-
-@keyframes angry-animation {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 .strengths__hand {
