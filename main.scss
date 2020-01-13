@@ -4,21 +4,6 @@ $secondFont: 'Roboto', sans-serif;
 
 .navigation {
     display: none;
-    // animation-name: navigation-animation;
-    // animation-duration: 3s;
-    // animation-timing-function: ease;
-    // animation-delay: 0s;
-    // animation-iteration-count: infinite;
-    // animation-direction: normal;
-    // animation-iteration-count: 1;
-    // }
-    // @keyframes navigation-animation {
-    // 0%{
-    //     opacity: 0;
-    // }
-    // 100%{
-    //     opacity: 100;
-    // }
 }
 
 .header {
@@ -46,12 +31,6 @@ $secondFont: 'Roboto', sans-serif;
 }
 
 .navbar {
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0 0px 5px 0px rgba(0,0,0,0.35);
-}
-
-.navbar {
     background: white;
     position: fixed;
     top: 0;
@@ -59,6 +38,9 @@ $secondFont: 'Roboto', sans-serif;
     z-index: 1000;
     max-width: 100vw;
     overflow: hidden;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0px 5px 0px rgba(0,0,0,0.35);
     
         &::after {
             content: "";
@@ -102,6 +84,7 @@ $secondFont: 'Roboto', sans-serif;
     background-size: cover;
     z-index: -100;  
     padding-top: 0;  
+    overflow: hidden;
 
     &::before {
         content: "";
@@ -113,26 +96,6 @@ $secondFont: 'Roboto', sans-serif;
         background-repeat: no-repeat;
         background-size: 70%;
         background-position: center bottom;
-        // animation-name: logo-animation;
-        // animation-delay: 60s;
-        // animation-duration: 3s;
-        // animation-timing-function: ease;
-        // animation-delay: 0s;
-        // animation-iteration-count: 1;
-        // animation-direction: normal;
-        
-        // @keyframes logo-animation {
-        //     0%{
-        //     opacity: 0;
-        //     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        //     transform: scale3d(0.3, 0.3, 0.3);
-        //     }
-        //     60%{
-        //     opacity: 1;
-        //     -webkit-transform: scale3d(1,1,1);
-        //     transform: scale3d(1,1,1);
-        //     }
-        // }
     }
 
         &__text {
@@ -153,12 +116,12 @@ $secondFont: 'Roboto', sans-serif;
 
 .introduction {
     min-height: 100vh;
-    // height: 950px;
     position: relative;
     background-image: url(images/aboutMeBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -100;
+    overflow: hidden;
     
     &::before {
         content: "";
@@ -178,7 +141,6 @@ $secondFont: 'Roboto', sans-serif;
 
     &__text {
         padding: 20px;
-        // height: 100vh;
     }
     &__header {
         margin: 0;
@@ -202,6 +164,7 @@ $secondFont: 'Roboto', sans-serif;
 .fields {
     position: relative;    
     color: #f7f7f7;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -255,32 +218,14 @@ $secondFont: 'Roboto', sans-serif;
         }
     &__icon {
         max-width: 180px;
-    //     animation-name: angry-animation;
-    //     animation-duration: 3s;
-    //     animation-timing-function: ease;
-    //     animation-delay: 0s;
-    //     animation-iteration-count: 1;
-    //     animation-direction: normal;
-    //     @keyframes angry-animation {
-    //         0%{
-    //           opacity: 0;
-    //           -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    //           transform: scale3d(0.3, 0.3, 0.3);
-    //         }
-    //         60%{
-    //           opacity: 1;
-    //           -webkit-transform: scale3d(1,1,1);
-    //           transform: scale3d(1,1,1);
-    //         }
-    //       }
-    // } 
-}
+    }
 }
 
 .strengths {
     background-image: url(images/strengthsBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
     &__header {
         margin: 0;
@@ -329,27 +274,7 @@ $secondFont: 'Roboto', sans-serif;
         padding: 1.5em;
         letter-spacing: 0.04em;
         line-height: 1.5em;
-    } 
-    // &__icon {
-        // animation-name: angry-animation;
-        // animation-duration: 3s;
-        // animation-timing-function: ease;
-        // animation-delay: 0s;
-        // animation-iteration-count: 1;
-        // animation-direction: normal;
-        // @keyframes angry-animation {
-        //     0%{
-        //       opacity: 0;
-        //       -webkit-transform: scale3d(0.3, 0.3, 0.3);
-        //       transform: scale3d(0.3, 0.3, 0.3);
-        //     }
-        //     60%{
-        //       opacity: 1;
-        //       -webkit-transform: scale3d(1,1,1);
-        //       transform: scale3d(1,1,1);
-        //     }
-        //   }
-    // }
+    }
     &__hand {
         max-width: 180px;
     }   
@@ -358,6 +283,7 @@ $secondFont: 'Roboto', sans-serif;
 .contact {
     position: relative;
     color: #f7f7f7;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -420,6 +346,7 @@ $secondFont: 'Roboto', sans-serif;
 
 .footer {
     background-color: #050505;
+    overflow: hidden;
         &__content {
             width: 100%;
             padding: 10px 0;
