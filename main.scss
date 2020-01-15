@@ -26,8 +26,7 @@ $secondFont: 'Roboto', sans-serif;
 .paragraph {
     font-family: $firstFont;
     text-align: justify;
-    padding-top: 25px;    
-    line-height: 1.5em;
+    padding-top: 25px;
 }
 
 .navbar {
@@ -96,6 +95,7 @@ $secondFont: 'Roboto', sans-serif;
         background-repeat: no-repeat;
         background-size: 70%;
         background-position: center bottom;
+        // data-aos="fade-up";
     }
 
         &__text {
@@ -103,7 +103,6 @@ $secondFont: 'Roboto', sans-serif;
         }
         &__header {
             margin: 0;
-            font-weight: 600;
             letter-spacing: 0.48em;
         }
         &__name {
