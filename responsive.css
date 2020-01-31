@@ -1,34 +1,4 @@
-@media screen and (min-width: 1120px)  {
-
-    /* NAVBAR */
-    /* .navbar {
-        background: transparent;
-    }
-
-    .navbar::after {
-        display: none;
-    }
-    
-    .navbar__logo {
-        display: none;
-    }
-
-    .navbar__phonePopup {
-        margin: 0;
-        width: 407px;
-        height: 105px;
-        padding-top: 20px;
-        transition: right 1s;
-    }
-    .navbar__phonePopup:hover {
-        right: 0px;
-    } */
-
-    .navbar {
-        display: none !important;
-    }
-    
-
+@media screen and (min-width: 1680px)  {
     /* NAVIGATION */
     .navigation {
         display: block;
@@ -38,85 +8,46 @@
         margin-top: auto; 
         margin-bottom: auto;
         left: -350px;
+        padding-left: 50px;
     }
+}
+
+
+
+@media screen and (min-width: 1121px) and (max-width: 1680px) { 
+    /* NAVIGATION */
+    .navigation {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1120px)  {
+
+    /* NAVBAR */
+    .navbar {
+        display: none;
+    }    
 
     /* GREETING */
-    .greeting {
-        min-height: 100vh;
+    .greeting { 
+        /* mountain's background */
+        height: 100vh;
         padding-top: 0;
         background-image: url(images/mountainsMonitor.png);
     }
     
-    .greeting::before{
-        opacity: 50%;
-    }
-
-    .greeting__text {
-        width: 1000px;
-        font-size: 1.1em;
-        margin: 0 auto;
-        padding-top: 200px; 
-        position: relative;
-        height: 100vh;
-    }
-
-    .greeting__text::after {
-        content: "";
-        position: absolute;
-        background-image: url(images/scroll.png);
-        z-index: 10000;
-        width: 25px;
-        height: 39px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        opacity: 100%;
-        background-position: center bottom;
-        right: 50%;
-        left: 50%;
-        bottom: 3px;
-        margin-right: 0;
-        /* animation-name: scroll-animation;
-        animation-duration: 1s;
-        animation-iteration-count: infinite; */
-    }
-/* 
-    @keyframes scroll-animation {
-        0%   { bottom: 5px;}
-        100%  { bottom: 1px;}
-      } */
-
-    .greeting__header::before {
-        content: "";
-        position: absolute;
-        background-image: url(images/logotop.png);
-        bottom: 3em;
-        width: 97px;
-        height: 69px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        /* animation-name: logo-animation;
-        animation-duration: 3s;
-        animation-timing-function: ease;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-iteration-count: 1; */
-    }  
-
-    .greeting__header {
-        font-size: 2.2em;
-    }
-
-    .greeting__paragraph {
-        padding-top: 40px;
-    }
-
     .greeting::before {
+        /* big logo */
+        opacity: 50%;
+        background-position: center bottom 0;
         background-size: 35%;
         opacity: 100;
     }
 
     .greeting::after {
+        /* Marta's photo */
         content: "";
         position: absolute;
         background-image: url(images/MartaBi.png);
@@ -130,25 +61,59 @@
         left: 0;
         right: 0;
         top: 0;
-        /* animation-name: logo-animation;
-        animation-duration: 3s;
-        animation-timing-function: ease;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-iteration-count: 1; */
     }
-        
-        /* @keyframes logo-animation {
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 100;
-            }
-        } */
+
+    .greeting__text {
+        width: 1000px;
+        font-size: 1.1em;
+        margin: 0 auto;
+        padding-top: 200px; 
+        position: relative;
+        height: 100vh;
+    }
+
+    .greeting__header {
+        font-size: 2.2em;
+    }
+
+    .greeting__header::before {
+        /* small top logo */
+        content: "";
+        position: absolute;
+        background-image: url(images/logotop.png);
+        bottom: 3em;
+        width: 97px;
+        height: 69px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }  
+
+    .greeting__paragraph {
+        padding-top: 40px;
+    }
+
 
     /* INTRODUCTION */
+    .introduction {
+        position: relative;
+    }
+
+    .introduction::before {
+        display: none;
+    }
+
+    .introduction::after {
+        content: "";
+        position: absolute;
+        background-image: url(images/court.jpg);
+        width: 539px;
+        height: 410px;
+        background-repeat: no-repeat;
+        background-position: center bottom 0;
+        right: 0;
+        top: 220px;
+    }
+
     .introduction__text {
         padding-top: 85px;
         width: 1000px;
@@ -169,7 +134,7 @@
         float: left;
     }
 
-    .introduction::before {
+    .introduction__paragraph::after {
         display: none;
     }
 
@@ -180,33 +145,6 @@
         padding-top: 90px;
         box-sizing: border-box;
     }
-
-    .introduction::after {
-        content: "";
-        position: absolute;
-        background-image: url(images/court.jpg);
-        width: 539px;
-        height: 410px;
-        background-repeat: no-repeat;
-        right: 50px;
-        bottom: 250px;
-        /* animation-name: logo-animation;
-        animation-duration: 3s;
-        animation-timing-function: ease;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-iteration-count: 1; */
-    }
-        
-        /* @keyframes logo-animation {
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 100;
-            }
-        } */
 
     /* FIELDS, STRENGTHS */
     .fields,
@@ -269,7 +207,8 @@
 
      /* CONTACT */
     .contact {
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
     }
 
     .contact {
@@ -350,6 +289,8 @@
 
     .contact__link {
         width: 70%;
+        height: auto;
+        min-height: 100vh;
     }    
     /* FOOTER */
     .footer__content {
@@ -362,6 +303,12 @@
     
 }
 
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1119px) { 
     * {
         font-size: 1.1em;
@@ -370,12 +317,17 @@
     .paragraph {
         line-height: 40px;
         letter-spacing: 0.5px;
+        padding-top: 50px;
     } 
 
     /* NAVBAR */
+    .navbar {
+        height: 80px;
+    }
     .navbar__logo {
-        width: 76px;
-        height: auto;
+        width: auto;
+        height: 60px;
+        padding: 10px;
     }
     
     .navbar__phonePopup {
@@ -383,22 +335,18 @@
         height: 139px;
         right: -165px;
         background-repeat: no-repeat;
-        top: 90%; 
+        top: 87%; 
         bottom: 0%; 
-    }
-
-    .navbar__phone {
-        padding-right: 25px;
     }
 
     /* GREETING */
     .greeting {
-        padding-top: 0;
-        min-height: calc(100vh - 70.33px);
+        min-height: calc(100vh - 80px);
+        padding-top: 80px;
     }
 
     .greeting__text {
-        padding: 130px 100px;
+        padding: 100px 100px;
     }
 
     .greeting__name {
@@ -414,6 +362,11 @@
         height: 1700px;
     }
 
+    .introduction::before {
+        top: 200px;
+        max-height: 450px;
+    }
+
     .introduction__text {
         padding: 50px 100px;
     }
@@ -422,8 +375,9 @@
         padding-top: 700px;
     }
 
-    .introduction::before {
-        background-position: center top 190px;
+    .introduction__paragraph::after {
+        top: 650px;
+        width: 500px;
     }
 
     .header::after {
