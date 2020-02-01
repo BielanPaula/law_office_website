@@ -90,6 +90,7 @@
 
     .greeting__paragraph {
         padding-top: 40px;
+        width: 50%;
     }
 
 
@@ -100,18 +101,6 @@
 
     .introduction::before {
         display: none;
-    }
-
-    .introduction::after {
-        content: "";
-        position: absolute;
-        background-image: url(images/court.jpg);
-        width: 539px;
-        height: 410px;
-        background-repeat: no-repeat;
-        background-position: center bottom 0;
-        right: 0;
-        top: 220px;
     }
 
     .introduction__text {
@@ -139,11 +128,26 @@
     }
 
     .introduction__image {
+        /* picture of courtroom */
+        display: block;
         width: 50%;
         float: right;
         padding-left: 40px;
         padding-top: 90px;
         box-sizing: border-box;
+    }
+    
+    .introduction__image::after {
+        /* picture of court */
+        content: "";
+        position: absolute;
+        background-image: url(images/court.jpg);
+        width: 539px;
+        height: 410px;
+        background-repeat: no-repeat;
+        background-position: center bottom 0;
+        right: 10px;
+        top: 420px;
     }
 
     /* FIELDS, STRENGTHS */
