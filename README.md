@@ -4,4 +4,4 @@ Onepage, fully responsive website is written with HTML5, Sass - CSS3 with using 
 
 link to website -> "comming soon"
 
- ![mockup](images/mockup.png)
+ ![mockup](images/mockup.jpg)
