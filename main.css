@@ -108,7 +108,7 @@
   background-position: center bottom 44px;
 }
 
-.greeting__text {
+.greeting__container {
   padding: 40px 20px 40px 20px;
 }
 
@@ -128,7 +128,7 @@
 .introduction {
   min-height: 100vh;
   position: relative;
-  background-image: url(images/aboutMeBackground.png);
+  background-image: url(images/aboutMeBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -100;
@@ -152,7 +152,7 @@
   top: 105px;
 }
 
-.introduction__text {
+.introduction__container {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -178,7 +178,6 @@
 .introduction__paragraph {
   margin: 0;
   padding-top: 350px;
-  font-size: 1em;
 }
 
 .introduction__readMore {
@@ -206,7 +205,7 @@
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(images/fieldsBackground.png);
+  background-image: url(images/fieldsBackground.jpg);
   width: 100%;
   min-height: 100vh;
   z-index: -1;
@@ -335,7 +334,7 @@
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(images/contactBackground.png);
+  background-image: url(images/contactBackground.jpg);
   width: 100%;
   min-height: 100vh;
   z-index: -1;
@@ -377,7 +376,6 @@
   color: #b3b3b3;
   letter-spacing: 0.04em;
   line-height: 1.5em;
-  font-size: 1em;
 }
 
 .contact__paragraph {
@@ -414,7 +412,7 @@
   font-size: 0.8em;
 }
 
-.footer__content {
+.footer__container {
   width: 100%;
   padding: 10px 0;
   position: relative;

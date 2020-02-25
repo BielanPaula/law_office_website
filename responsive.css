@@ -1,4 +1,58 @@
-@media screen and (min-width: 1680px)  {
+@media screen and (min-width: 3200px)  {
+    .header {
+        font-size: 2.5em;
+    }
+
+    .header::after {
+        width: 600px;
+    }
+
+    .greeting__header::before {
+        display: none;
+    }
+
+    .greeting__container,
+    .introduction__container,
+    .fields__container,
+    .strengths__container,
+    .contact__container,
+    .footer__container {
+        min-width: 2000px;
+        font-size: 2.4em;
+    }
+
+    .contact__content {
+        font-size: 1.3em;
+    }
+
+    .fields__icon {
+        max-width: 880px;
+        width: 400px;
+    }
+
+    .navigation {
+        height: 700px;
+    }
+
+    .navigation {
+        display: block;
+        position: absolute;
+        top: 50%; 
+        bottom: 50%;
+        margin-top: auto; 
+        margin-bottom: auto;
+        left: -500px;
+        padding-left: 50px;
+    }
+
+    .greeting__nav {
+        top: 35%;
+    }
+}
+
+
+
+@media screen and (min-width: 1680px) and (max-width: 3199px)  {
     /* NAVIGATION */
 
     .navigation {
@@ -11,7 +65,7 @@
         left: -350px;
         padding-left: 50px;
     }
-    
+
     .greeting__nav {
         top: 30%;
     }
@@ -24,11 +78,19 @@
     .navigation {
         display: none;
     }
+
+    .greeting__container {
+        width: 1000px;
+    }
 }
 
 
 
 @media screen and (min-width: 1120px)  {
+
+    .header {
+        /* font-size: 2.2em; */
+    }
 
     /* NAVBAR */
     .navbar {
@@ -40,7 +102,7 @@
         /* mountain's background */
         height: 100vh;
         padding-top: 0;
-        background-image: url(images/mountainsMonitor.png);
+        background-image: url(images/mountainsMonitor.jpg);
     }
     
     .greeting::before {
@@ -68,18 +130,18 @@
         top: 0;
     }
 
-    .greeting__text {
+    .greeting__container {
         width: 1000px;
-        font-size: 1.1em;
+        /* font-size: 1.1em; */
         margin: 0 auto;
         padding-top: 200px; 
         position: relative;
         height: 100vh;
     }
 
-    .greeting__header {
-        font-size: 2.2em;
-    }
+    /* .greeting__header { */
+        /* font-size: 2.2em; */
+    /* } */
 
     .greeting__header::before {
         /* small top logo */
@@ -108,7 +170,7 @@
         display: none;
     }
 
-    .introduction__text {
+    .introduction__container {
         padding-top: 85px;
         width: 1000px;
         margin: 0 auto;
@@ -117,14 +179,14 @@
     }
 
     .introduction__header {
-        font-size: 2.2em;
+        /* font-size: 2.2em; */
         width: 50%;  
     }
 
     .introduction__paragraph {
         padding-top: 85px;
         width: 50%;        
-        font-size: 1.1em;
+        /* font-size: 1.1em; */
         float: left;
     }
 
@@ -174,7 +236,7 @@
     .fields__header,
     .strengths__header {
         padding-top: 85px;
-        font-size: 2.2em;
+        /* font-size: 2.2em; */
     }
 
     .fields__container,
@@ -194,7 +256,7 @@
     .fields__box,
     .strengths__box {
         width: 25%;
-        font-size: 0.7em;
+        /* font-size: 0.7em; */
         padding-bottom: 60px;
         padding: 0;
     }
@@ -205,11 +267,11 @@
 
     .fields__name,
     .strengths__name {
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
 
     .strengths__paragraph {
-        font-size: 1.2em;
+        /* font-size: 1.2em; */
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -225,7 +287,7 @@
     }
 
     .contact__header {
-        font-size: 2.2em;
+        /* font-size: 2.2em; */
         padding-top: 85px;
         padding-left: 0;
     }
@@ -241,7 +303,7 @@
         margin-bottom: auto;
     }
 
-    .contact__text {
+    .contact__container {
         display: flex;
         flex-direction: row;
         width: 1000px;
@@ -249,7 +311,7 @@
         position: relative;
     }
 
-    .contact__container {
+    .contact__text {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -293,7 +355,7 @@
     }
 
     .contact__content {
-        font-size: 1.3em;
+        /* font-size: 1.3em; */
     }
 
     .contact__link {
@@ -302,7 +364,7 @@
         min-height: 100vh;
     }    
     /* FOOTER */
-    .footer__content {
+    .footer__container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -311,10 +373,6 @@
     }
     
 }
-
-
-
-
 
 
 
@@ -354,7 +412,7 @@
         padding-top: 80px;
     }
 
-    .greeting__text {
+    .greeting__container {
         padding: 100px 100px;
     }
 
@@ -369,6 +427,10 @@
     /* INTRODUCTION */
     .introduction {
         height: 1700px;
+    }
+
+    .introduction__container {
+        padding: 100px 100px;
     }
 
     .introduction::before {
@@ -431,6 +493,7 @@
         padding-right: 100px;
         width: 100%;
         box-sizing: border-box;
+        font-size: 0.8em;
     }
 
     .contact__header{
@@ -441,7 +504,7 @@
         left: 100px;
     }
 
-    .contact__container {
+    .contact__text {
         padding-top: 40px;
     }
 
